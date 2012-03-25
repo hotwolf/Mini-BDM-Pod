@@ -3,8 +3,9 @@ Mini BDM Pod
 A small and inexpensive D-Bug12Xv5 Pod for Freescale's S12(X) microcontrollers.
 
 Files:
-"Mini BDM Pod RevA.sch" - Schematic (Eagle)
-"Mini BDM Pod RevA.brd" - PCB layout (Eagle)
-"Mini BDM Pod RevA.svg" - Enclosure (for faser cutting service) 
+"Mini BDM Pod RevA.sch"        - Schematic (Eagle)
+"Mini BDM Pod RevA.brd"        - PCB layout (Eagle)
+"Mini BDM Pod RevA.Gerber.zip" - PCB layout (Gerber)
+"Mini BDM Pod RevA.svg"        - Enclosure (for faser cutting service) 
 
 This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License (http://creativecommons.org/licenses/by-nc-sa/3.0/).
