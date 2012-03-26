@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.1">
+<eagle version="6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -22,8 +22,8 @@
 <layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
-<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
-<layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
+<layer number="30" name="bStop" color="7" fill="6" visible="yes" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
 <layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
@@ -37,11 +37,11 @@
 <layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="yes"/>
 <layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
-<layer number="44" name="Drills" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
-<layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
+<layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
 <layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
@@ -71,8 +71,8 @@
 <layer number="111" name="LPC17xx" color="7" fill="1" visible="no" active="yes"/>
 <layer number="112" name="tSilk" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="116" name="Patch_BOT" color="9" fill="4" visible="no" active="yes"/>
-<layer number="121" name="_tsilk" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="122" name="_bsilk" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="121" name="_tsilk" color="7" fill="1" visible="no" active="yes"/>
+<layer number="122" name="_bsilk" color="7" fill="1" visible="no" active="yes"/>
 <layer number="123" name="tTestmark" color="7" fill="1" visible="no" active="yes"/>
 <layer number="124" name="bTestmark" color="7" fill="1" visible="no" active="yes"/>
 <layer number="125" name="_tNames" color="7" fill="1" visible="no" active="yes"/>
@@ -85,7 +85,7 @@
 <layer number="151" name="HeatSink" color="7" fill="1" visible="no" active="yes"/>
 <layer number="152" name="_bDocu" color="7" fill="1" visible="no" active="yes"/>
 <layer number="199" name="Contour" color="7" fill="1" visible="no" active="yes"/>
-<layer number="200" name="200bmp" color="12" fill="10" visible="yes" active="yes"/>
+<layer number="200" name="200bmp" color="12" fill="10" visible="no" active="yes"/>
 <layer number="201" name="201bmp" color="2" fill="10" visible="no" active="yes"/>
 <layer number="202" name="202bmp" color="3" fill="1" visible="no" active="no"/>
 <layer number="203" name="203bmp" color="4" fill="10" visible="no" active="yes"/>
@@ -1661,6 +1661,15 @@
 <text x="22.4" y="28.8" size="1" layer="122" font="vector" rot="MR0" align="center">MC9S12XEP100xAL</text>
 <text x="15" y="37.3" size="1" layer="112" font="vector" ratio="12" align="center">Mini BDM Pod</text>
 <wire x1="33.175" y1="26.925" x2="33.575" y2="26.925" width="0" layer="42"/>
+<wire x1="21.8" y1="34.3" x2="21.8" y2="34.1" width="0.1" layer="21"/>
+<wire x1="21.8" y1="34.1" x2="21.8" y2="33.9" width="0.1" layer="21"/>
+<wire x1="21.8" y1="33.9" x2="21.1" y2="34.1" width="0.1" layer="21"/>
+<wire x1="21.1" y1="34.1" x2="21.8" y2="34.3" width="0.1" layer="21"/>
+<wire x1="21.1" y1="34.3" x2="21.1" y2="34.1" width="0.1" layer="21"/>
+<wire x1="21.1" y1="34.1" x2="21.1" y2="33.9" width="0.1" layer="21"/>
+<wire x1="21.1" y1="34.1" x2="20.7" y2="34.1" width="0.1" layer="21"/>
+<wire x1="21.8" y1="34.1" x2="22.2" y2="34.1" width="0.1" layer="21"/>
+<wire x1="22.7" y1="26.9" x2="22.6" y2="26.9" width="0.1" layer="21"/>
 </plain>
 <libraries>
 <library name="myLibrary">
@@ -2319,53 +2328,163 @@ design rules under a new name.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="MCU" library="myLibrary" package="QFP112" value="S12XEP100_QFP112" x="22.6" y="25.1" rot="MR270"/>
-<element name="USB_PLUG" library="myLibrary" package="A" value="" x="3" y="25"/>
-<element name="USB_CONVERTER" library="ftdichip" package="SSOP28" value="FT232RL" x="11.2" y="24" rot="R90">
+<element name="MCU" library="myLibrary" package="QFP112" value="S12XEP100_QFP112" x="22.6" y="25.1" smashed="yes" rot="MR270">
+<attribute name="VALUE" x="34.1" y="35.1" size="1.27" layer="28" rot="MR270"/>
+<attribute name="NAME" x="22.6" y="26.9" size="0.5" layer="26" rot="R180"/>
+</element>
+<element name="USB_PLUG" library="myLibrary" package="A" value="" x="3" y="25" smashed="yes">
+<attribute name="NAME" x="-2.163" y="18.59" size="0.5" layer="25" rot="R180"/>
+<attribute name="VALUE" x="-4.493" y="22.46" size="0.8128" layer="27" ratio="10" rot="R90"/>
+<attribute name="NAME" x="-4.739" y="24.205" size="0.254" layer="33" rot="R90"/>
+</element>
+<element name="USB_CONVERTER" library="ftdichip" package="SSOP28" value="FT232RL" x="11.2" y="24" smashed="yes" rot="R90">
 <attribute name="OC_NEWARK" value="91K9918" x="11.2" y="12" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MPN" value="FT232RL" x="11.2" y="12" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MF" value="" x="11.2" y="12" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="OC_FARNELL" value="1146032" x="11.2" y="12" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="13.9299" y="18.524" size="0.5" layer="25" rot="R180"/>
+<attribute name="VALUE" x="11.88" y="20.1001" size="1.27" layer="27" rot="R90"/>
 </element>
-<element name="C_VBUS" library="myLibrary" package="0805" value="10nf" x="7.1" y="25" rot="MR90"/>
-<element name="C_VCCIO1" library="myLibrary" package="0805" value="100nF" x="16.8" y="23.1" rot="R270"/>
-<element name="C_VCCIO2" library="myLibrary" package="0805" value="4.7uF" x="7.1" y="28.6" rot="MR90"/>
-<element name="C_3V3OUT" library="myLibrary" package="0805" value="100nF" x="8.2" y="30.1" rot="R180"/>
-<element name="L_VBUS" library="myLibrary" package="0805" value="10nH" x="7.1" y="21.4" rot="MR90"/>
-<element name="LED_USB" library="myLibrary" package="0805" value="" x="21.4" y="25.8" rot="R180"/>
-<element name="R_LED_USB" library="myLibrary" package="0805" value="270" x="17.8" y="25.8" rot="R180"/>
-<element name="BDM_IN" library="myLibrary" package="BDM" value="BDM" x="45.955" y="28.81" rot="R270"/>
-<element name="BDM_OUT" library="myLibrary" package="BDM" value="BDM" x="45.955" y="21.19" rot="R90"/>
-<element name="JUMPER" library="myLibrary" package="1X2" value="1X2" x="37.065" y="30.08"/>
-<element name="GND" library="crystal" package="HC49U70" value="10MHz" x="37" y="19.1" rot="R270">
+<element name="C_VBUS" library="myLibrary" package="0805" value="10nf" x="7.1" y="25" smashed="yes" rot="MR90">
+<attribute name="NAME" x="8.6" y="23.7" size="0.5" layer="26" rot="R90"/>
+<attribute name="VALUE" x="4.9" y="23.2" size="1.27" layer="28" rot="MR90"/>
+</element>
+<element name="C_VCCIO1" library="myLibrary" package="0805" value="100nF" x="16.8" y="23.1" smashed="yes" rot="R270">
+<attribute name="NAME" x="19.3" y="21.3" size="0.5" layer="25" rot="R180"/>
+<attribute name="VALUE" x="14.6" y="24.9" size="1.27" layer="27" rot="R270"/>
+</element>
+<element name="C_VCCIO2" library="myLibrary" package="0805" value="4.7uF" x="7.1" y="28.6" smashed="yes" rot="MR90">
+<attribute name="NAME" x="8.6" y="26.9" size="0.5" layer="26" rot="R90"/>
+<attribute name="VALUE" x="4.9" y="26.8" size="1.27" layer="28" rot="MR90"/>
+</element>
+<element name="C_3V3OUT" library="myLibrary" package="0805" value="100nF" x="8.2" y="30.1" smashed="yes" rot="R180">
+<attribute name="NAME" x="9.8" y="31.6" size="0.5" layer="25" rot="R180"/>
+<attribute name="VALUE" x="10" y="32.3" size="1.27" layer="27" rot="R180"/>
+</element>
+<element name="L_VBUS" library="myLibrary" package="0805" value="10nH" x="7.1" y="21.4" smashed="yes" rot="MR90">
+<attribute name="NAME" x="8.6" y="20" size="0.5" layer="26" rot="R90"/>
+<attribute name="VALUE" x="4.9" y="19.6" size="1.27" layer="28" rot="MR90"/>
+</element>
+<element name="LED_USB" library="myLibrary" package="0805" value="" x="21.4" y="25.8" smashed="yes" rot="R180">
+<attribute name="NAME" x="26.3" y="26.1" size="0.5" layer="25" rot="R180"/>
+<attribute name="VALUE" x="23.2" y="28" size="1.27" layer="27" rot="R180"/>
+</element>
+<element name="R_LED_USB" library="myLibrary" package="0805" value="270" x="17.8" y="25.8" smashed="yes" rot="R180">
+<attribute name="NAME" x="20" y="25.1" size="0.5" layer="25" rot="R180"/>
+<attribute name="VALUE" x="19.6" y="28" size="1.27" layer="27" rot="R180"/>
+</element>
+<element name="BDM_IN" library="myLibrary" package="BDM" value="BDM" x="45.955" y="28.81" smashed="yes" rot="R270">
+<attribute name="NAME" x="44.855" y="31.79" size="0.5" layer="25" rot="R180"/>
+<attribute name="VALUE" x="38.2" y="32.655" size="1.27" layer="27" rot="R270"/>
+</element>
+<element name="BDM_OUT" library="myLibrary" package="BDM" value="BDM" x="45.955" y="21.19" smashed="yes" rot="R90">
+<attribute name="NAME" x="45.555" y="18.5" size="0.5" layer="25" rot="R180"/>
+<attribute name="VALUE" x="53.71" y="17.345" size="1.27" layer="27" rot="R90"/>
+</element>
+<element name="JUMPER" library="myLibrary" package="1X2" value="1X2" x="37.065" y="30.08" smashed="yes">
+<attribute name="NAME" x="37.8512" y="31.9912" size="0.5" layer="25" ratio="10" rot="R180"/>
+<attribute name="VALUE" x="34.525" y="26.905" size="1.27" layer="27"/>
+</element>
+<element name="Q" library="crystal" package="HC49U70" value="10MHz" x="37" y="19.1" smashed="yes" rot="R270">
 <attribute name="OC_NEWARK" value="unknown" x="37" y="19.1" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MPN" value="" x="37" y="19.1" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MF" value="" x="37" y="19.1" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="OC_FARNELL" value="unknown" x="37" y="19.1" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="37.32" y="20.075" size="0.5" layer="25" ratio="10"/>
+<attribute name="VALUE" x="32.555" y="24.18" size="1.27" layer="27" ratio="10" rot="R270"/>
 </element>
-<element name="C_Q1" library="myLibrary" package="0805" value="15pF" x="38.6" y="20.9" rot="MR90"/>
-<element name="C_Q2" library="myLibrary" package="0805" value="15pF" x="38.6" y="17.3" rot="MR270"/>
-<element name="C_VDDF" library="myLibrary" package="0805" value="220nF" x="22.1" y="36" rot="R180"/>
-<element name="C_VDDR" library="myLibrary" package="0805" value="100nF" x="34.9" y="26.5" rot="MR270"/>
-<element name="R_PM6" library="myLibrary" package="0805" value="10K" x="36.7" y="26.5" rot="MR270"/>
-<element name="C_VDDPLL" library="myLibrary" package="0805" value="220nF" x="31.2" y="22.5" rot="R270"/>
-<element name="C_VDD" library="myLibrary" package="0805" value="220nF" x="25.6" y="14.2"/>
-<element name="C_VDDA1" library="myLibrary" package="0805" value="100nF" x="11.6" y="14" rot="MR270"/>
-<element name="C_VDDX1" library="myLibrary" package="0805" value="100nF" x="10.3" y="30.3" rot="MR90"/>
-<element name="LED_BI_R" library="myLibrary" package="0805" value="" x="21.4" y="33" rot="R180"/>
-<element name="LED_G" library="myLibrary" package="0805" value="" x="21.4" y="27.6" rot="R180"/>
-<element name="LED_R" library="myLibrary" package="0805" value="" x="21.4" y="29.4" rot="R180"/>
-<element name="LED_BI_G" library="myLibrary" package="0805" value="" x="21.4" y="31.2" rot="R180"/>
-<element name="R_LED_BI_G" library="myLibrary" package="0805" value="270" x="17.8" y="31.2"/>
-<element name="R_LED_R" library="myLibrary" package="0805" value="270" x="17.8" y="29.4"/>
-<element name="R_LED_G" library="myLibrary" package="0805" value="270" x="17.8" y="27.6"/>
-<element name="R_PA11_2" library="myLibrary" package="0805" value="10K" x="21.85" y="18.4" rot="R270"/>
-<element name="R_PA11_1" library="myLibrary" package="0805" value="10K" x="21.3" y="14.2" rot="R180"/>
-<element name="LEVEL_SHIFTER" library="myLibrary" package="SOT-23-MAXIM" value="MAX3373" x="28.05" y="17.9" rot="R90"/>
-<element name="R_PM7" library="myLibrary" package="0805" value="47k" x="23.65" y="18.4" rot="R90"/>
-<element name="C_MAX3372" library="myLibrary" package="0805" value="100nF" x="31.2" y="17.6" rot="R90"/>
-<element name="C_VL" library="myLibrary" package="0805" value="100nF" x="25.45" y="18.4" rot="R90"/>
-<element name="R_LED_BI_R" library="myLibrary" package="0805" value="270" x="17.8" y="33"/>
+<element name="C_Q1" library="myLibrary" package="0805" value="15pF" x="38.6" y="20.9" smashed="yes" rot="MR90">
+<attribute name="NAME" x="37.8" y="22.8" size="0.5" layer="26"/>
+<attribute name="VALUE" x="36.4" y="19.1" size="1.27" layer="28" rot="MR90"/>
+</element>
+<element name="C_Q2" library="myLibrary" package="0805" value="15pF" x="38.6" y="17.3" smashed="yes" rot="MR270">
+<attribute name="NAME" x="37.8" y="15" size="0.5" layer="26"/>
+<attribute name="VALUE" x="40.8" y="19.1" size="1.27" layer="28" rot="MR270"/>
+</element>
+<element name="C_VDDF" library="myLibrary" package="0805" value="220nF" x="22.1" y="36" smashed="yes" rot="R180">
+<attribute name="NAME" x="22.9" y="37.4" size="0.5" layer="25" rot="R180"/>
+<attribute name="VALUE" x="23.9" y="38.2" size="1.27" layer="27" rot="R180"/>
+</element>
+<element name="C_VDDR" library="myLibrary" package="0805" value="100nF" x="34.9" y="26.5" smashed="yes" rot="MR270">
+<attribute name="NAME" x="34.2" y="24.1" size="0.5" layer="26"/>
+<attribute name="VALUE" x="37.1" y="28.3" size="1.27" layer="28" rot="MR270"/>
+</element>
+<element name="R_PM6" library="myLibrary" package="0805" value="10K" x="36.7" y="26.5" smashed="yes" rot="MR270">
+<attribute name="NAME" x="36.1" y="28.3" size="0.5" layer="26"/>
+<attribute name="VALUE" x="38.9" y="28.3" size="1.27" layer="28" rot="MR270"/>
+</element>
+<element name="C_VDDPLL" library="myLibrary" package="0805" value="220nF" x="31.2" y="22.5" smashed="yes" rot="R270">
+<attribute name="NAME" x="32.1" y="24.3" size="0.5" layer="25" rot="R270"/>
+<attribute name="VALUE" x="29" y="24.3" size="1.27" layer="27" rot="R270"/>
+</element>
+<element name="C_VDD" library="myLibrary" package="0805" value="220nF" x="25.6" y="14.2" smashed="yes">
+<attribute name="NAME" x="24.7" y="12.7" size="0.5" layer="25"/>
+<attribute name="VALUE" x="23.8" y="12" size="1.27" layer="27"/>
+</element>
+<element name="C_VDDA1" library="myLibrary" package="0805" value="100nF" x="11.6" y="14" smashed="yes" rot="MR270">
+<attribute name="NAME" x="10.7" y="15.8" size="0.5" layer="26" rot="MR270"/>
+<attribute name="VALUE" x="13.8" y="15.8" size="1.27" layer="28" rot="MR270"/>
+</element>
+<element name="C_VDDX1" library="myLibrary" package="0805" value="100nF" x="10.3" y="30.3" smashed="yes" rot="MR90">
+<attribute name="NAME" x="9.5" y="28.8" size="0.5" layer="26" rot="R90"/>
+<attribute name="VALUE" x="8.1" y="28.5" size="1.27" layer="28" rot="MR90"/>
+</element>
+<element name="LED_BI_R" library="myLibrary" package="0805" value="" x="21.4" y="33" smashed="yes" rot="R180">
+<attribute name="NAME" x="26.4" y="33.2" size="0.5" layer="25" rot="R180"/>
+<attribute name="VALUE" x="23.2" y="35.2" size="1.27" layer="27" rot="R180"/>
+</element>
+<element name="LED_G" library="myLibrary" package="0805" value="" x="21.4" y="27.6" smashed="yes" rot="R180">
+<attribute name="NAME" x="25.4" y="27.9" size="0.5" layer="25" rot="R180"/>
+<attribute name="VALUE" x="23.2" y="29.8" size="1.27" layer="27" rot="R180"/>
+</element>
+<element name="LED_R" library="myLibrary" package="0805" value="" x="21.4" y="29.4" smashed="yes" rot="R180">
+<attribute name="NAME" x="25.4" y="29.6" size="0.5" layer="25" rot="R180"/>
+<attribute name="VALUE" x="23.2" y="31.6" size="1.27" layer="27" rot="R180"/>
+</element>
+<element name="LED_BI_G" library="myLibrary" package="0805" value="" x="21.4" y="31.2" smashed="yes" rot="R180">
+<attribute name="NAME" x="26.4" y="31.4" size="0.5" layer="25" rot="R180"/>
+<attribute name="VALUE" x="23.2" y="33.4" size="1.27" layer="27" rot="R180"/>
+</element>
+<element name="R_LED_BI_G" library="myLibrary" package="0805" value="270" x="17.8" y="31.2" smashed="yes">
+<attribute name="NAME" x="11.8" y="31" size="0.5" layer="25"/>
+<attribute name="VALUE" x="16" y="29" size="1.27" layer="27"/>
+</element>
+<element name="R_LED_R" library="myLibrary" package="0805" value="270" x="17.8" y="29.4" smashed="yes">
+<attribute name="NAME" x="12.9" y="29.5" size="0.5" layer="25"/>
+<attribute name="VALUE" x="16" y="27.2" size="1.27" layer="27"/>
+</element>
+<element name="R_LED_G" library="myLibrary" package="0805" value="270" x="17.8" y="27.6" smashed="yes">
+<attribute name="NAME" x="16.1" y="26.1" size="0.5" layer="25" rot="R90"/>
+<attribute name="VALUE" x="16" y="25.4" size="1.27" layer="27"/>
+</element>
+<element name="R_PA11_2" library="myLibrary" package="0805" value="10K" x="21.85" y="18.4" smashed="yes" rot="R270">
+<attribute name="NAME" x="21.95" y="20.1" size="0.5" layer="25" rot="R90"/>
+<attribute name="VALUE" x="19.65" y="20.2" size="1.27" layer="27" rot="R270"/>
+</element>
+<element name="R_PA11_1" library="myLibrary" package="0805" value="10K" x="21.3" y="14.2" smashed="yes" rot="R180">
+<attribute name="NAME" x="22.8" y="13.3" size="0.5" layer="25" rot="R180"/>
+<attribute name="VALUE" x="23.1" y="16.4" size="1.27" layer="27" rot="R180"/>
+</element>
+<element name="LEVEL_SHIFTER" library="myLibrary" package="SOT-23-MAXIM" value="MAX3373" x="28.05" y="17.9" smashed="yes" rot="R90">
+<attribute name="NAME" x="25" y="15.85" size="0.5" layer="25"/>
+<attribute name="VALUE" x="31.25" y="16.2" size="1.27" layer="27" rot="R90"/>
+</element>
+<element name="R_PM7" library="myLibrary" package="0805" value="47k" x="23.65" y="18.4" smashed="yes" rot="R90">
+<attribute name="NAME" x="23.75" y="20.1" size="0.5" layer="25" rot="R90"/>
+<attribute name="VALUE" x="25.85" y="16.6" size="1.27" layer="27" rot="R90"/>
+</element>
+<element name="C_MAX3372" library="myLibrary" package="0805" value="100nF" x="31.2" y="17.6" smashed="yes" rot="R90">
+<attribute name="NAME" x="32.2" y="19.3" size="0.5" layer="25" rot="R270"/>
+<attribute name="VALUE" x="33.4" y="15.8" size="1.27" layer="27" rot="R90"/>
+</element>
+<element name="C_VL" library="myLibrary" package="0805" value="100nF" x="25.45" y="18.4" smashed="yes" rot="R90">
+<attribute name="NAME" x="25.55" y="20.2" size="0.5" layer="25" rot="R90"/>
+<attribute name="VALUE" x="27.65" y="16.6" size="1.27" layer="27" rot="R90"/>
+</element>
+<element name="R_LED_BI_R" library="myLibrary" package="0805" value="270" x="17.8" y="33" smashed="yes">
+<attribute name="NAME" x="11.9" y="32.7" size="0.5" layer="25"/>
+<attribute name="VALUE" x="16" y="30.8" size="1.27" layer="27"/>
+</element>
 </elements>
 <signals>
 <signal name="VDD">
@@ -2784,7 +2903,7 @@ design rules under a new name.</description>
 <signal name="EXTAL">
 <contactref element="MCU" pad="46"/>
 <contactref element="C_Q1" pad="2"/>
-<contactref element="GND" pad="1"/>
+<contactref element="Q" pad="1"/>
 <wire x1="33.35" y1="22.825" x2="35.675" y2="22.825" width="0.4" layer="16"/>
 <wire x1="35.675" y1="22.825" x2="36.75" y2="21.75" width="0.4" layer="16"/>
 <wire x1="36.75" y1="21.75" x2="37" y2="21.5" width="0.254" layer="16"/>
@@ -2796,7 +2915,7 @@ design rules under a new name.</description>
 <signal name="XTAL">
 <contactref element="MCU" pad="47"/>
 <contactref element="C_Q2" pad="2"/>
-<contactref element="GND" pad="2"/>
+<contactref element="Q" pad="2"/>
 <wire x1="35.9" y1="17.787" x2="37" y2="16.687" width="0.4" layer="16"/>
 <wire x1="37" y1="16.687" x2="38.313" y2="16.687" width="0.4" layer="16"/>
 <wire x1="38.313" y1="16.687" x2="38.5" y2="16.5" width="0.4" layer="16"/>

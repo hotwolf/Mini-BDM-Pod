@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.1">
+<eagle version="6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -3132,7 +3132,7 @@ Source: 008-0260-0_E.pdf</description>
 <part name="BDM_IN" library="myLibrary" deviceset="BDM" device=""/>
 <part name="BDM_OUT" library="myLibrary" deviceset="BDM" device=""/>
 <part name="JUMPER" library="myLibrary" deviceset="1X2" device=""/>
-<part name="GND" library="crystal" deviceset="CRYSTAL" device="HC49U70" value="10MHz"/>
+<part name="Q" library="crystal" deviceset="CRYSTAL" device="HC49U70" value="10MHz"/>
 <part name="VDD1" library="supply1" deviceset="VDD" device=""/>
 <part name="VDD2" library="supply1" deviceset="VDD" device=""/>
 <part name="GND5" library="supply1" deviceset="GND" device=""/>
@@ -3208,7 +3208,7 @@ Source: 008-0260-0_E.pdf</description>
 <instance part="BDM_IN" gate="G$1" x="35.56" y="81.28" rot="R180"/>
 <instance part="BDM_OUT" gate="G$1" x="35.56" y="50.8" rot="R180"/>
 <instance part="JUMPER" gate="G$1" x="30.48" y="20.32" rot="R270"/>
-<instance part="GND" gate="G$1" x="63.5" y="20.32"/>
+<instance part="Q" gate="G$1" x="63.5" y="20.32"/>
 <instance part="VDD1" gate="G$1" x="40.64" y="157.48"/>
 <instance part="VDD2" gate="G$1" x="17.78" y="86.36"/>
 <instance part="GND5" gate="1" x="17.78" y="76.2"/>
@@ -3665,7 +3665,7 @@ Source: 008-0260-0_E.pdf</description>
 <pinref part="C_Q1" gate="G$1" pin="2"/>
 <wire x1="58.42" y1="17.78" x2="58.42" y2="20.32" width="0.1524" layer="91"/>
 <label x="58.42" y="22.86" size="1.778" layer="95" rot="R90"/>
-<pinref part="GND" gate="G$1" pin="1"/>
+<pinref part="Q" gate="G$1" pin="1"/>
 <wire x1="58.42" y1="20.32" x2="58.42" y2="22.86" width="0.1524" layer="91"/>
 <wire x1="60.96" y1="20.32" x2="58.42" y2="20.32" width="0.1524" layer="91"/>
 <junction x="58.42" y="20.32"/>
@@ -3681,7 +3681,7 @@ Source: 008-0260-0_E.pdf</description>
 <pinref part="C_Q2" gate="G$1" pin="2"/>
 <wire x1="76.2" y1="17.78" x2="76.2" y2="20.32" width="0.1524" layer="91"/>
 <label x="76.2" y="22.86" size="1.778" layer="95" rot="R90"/>
-<pinref part="GND" gate="G$1" pin="2"/>
+<pinref part="Q" gate="G$1" pin="2"/>
 <wire x1="76.2" y1="20.32" x2="76.2" y2="22.86" width="0.1524" layer="91"/>
 <wire x1="66.04" y1="20.32" x2="76.2" y2="20.32" width="0.1524" layer="91"/>
 <junction x="76.2" y="20.32"/>
