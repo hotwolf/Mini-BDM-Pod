@@ -1,0 +1,41 @@
+Bill of Materials for the Mini BDM Pod Rev A:
+=============================================
+
+ICs:
+
+1x	MC9S12XEP100xAL		LQFP112			MCU
+1x	FT232RL			SSOP-28			USB_CONVERTER
+1x	MAX3373EEKA+		SOT23			LEVEL_SHIFTER			
+
+Oscillator:
+1x	10MHz			Print, pin dist. 7.62mm	Q
+
+Capacitors:
+
+2x	 15pF			0805			C_Q1, C_Q2
+1x	 10nF			0805			C_VBUS
+5x	100nF			0805			C_3V3OUT, C_MAX3372, C_VCCIO1, C_VDDA1, C_VDDX1, C_VL
+4x	220nF			0805			C_VDD, C_VDDF, C_VDDPLL, C_VDDR
+1x	4.7uF			0805			C_VCCIO2
+
+Inductors:
+
+1x	10nH			0805			L_VBUS
+
+Resistors:
+
+5x	270			0805			R_LED_BI_G, R_LED_BI_R, R_LED_G, R_LED_R, R_LED_USB
+3x	10K			0805			R_PA11_1, R_PA11_2, R_PM6
+1x	47K			0805			R_PM7
+
+LEDs:
+
+2x	red			0805			LED_R, LED_BI_R
+2x	green			0805			LED_USB, LED_BI_G
+1x	yellow			0805			LED_G
+
+Connectors:
+
+1x	USB-A			Print			USB_PLUG
+2x	2x3 strait		Print			BDM_IN, BDM_OUT
+1x	1x2 bent		Print			JUMPER

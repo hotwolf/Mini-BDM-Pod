@@ -7,5 +7,6 @@ Files:
 "Mini BDM Pod RevA.brd"        - PCB layout (Eagle)
 "Mini BDM Pod RevA.Gerber.zip" - PCB layout (Gerber)
 "Mini BDM Pod RevA.svg"        - Enclosure (for faser cutting service) 
+"Mini BDM Pod RevA BOM.txt"    - Bill of Materials
 
 This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License (http://creativecommons.org/licenses/by-nc-sa/3.0/).
