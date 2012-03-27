@@ -37,5 +37,5 @@ LEDs:
 Connectors:
 
 1x	USB-A			Print			USB_PLUG
-2x	2x3 strait		Print			BDM_IN, BDM_OUT
+2x	2x3 straight		Print			BDM_IN, BDM_OUT
 1x	1x2 bent		Print			JUMPER
