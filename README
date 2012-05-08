@@ -2,7 +2,19 @@ Mini BDM Pod
 ============ 
 A small and inexpensive D-Bug12Xv5 Pod for Freescale's S12(X) microcontrollers.
 
+RevB:
+=====
 Files:
+"Mini BDM Pod RevB.sch"               - Schematic (Eagle 6.1.0)
+"Mini BDM Pod RevB.brd"               - PCB layout (Eagle 6.1.0)
+"Mini BDM Pod RevB.Gerber.zip"        - PCB layout (Gerber)
+"Mini BDM Pod RevB.svg"               - Enclosure (for faser cutting service) 
+"Mini BDM Pod RevB BOM.txt"           - Bill of Materials
+"Mini BDM Pod RevB Schematic.pdf"     - Schematic
+"Mini BDM Pod RevB Mounting Plan.pdf" - Assembly diagram
+
+RevA (obsolete!!!):
+===================
 "Mini BDM Pod RevA.sch"               - Schematic (Eagle 6.1.0)
 "Mini BDM Pod RevA.brd"               - PCB layout (Eagle 6.1.0)
 "Mini BDM Pod RevA.Gerber.zip"        - PCB layout (Gerber)
@@ -10,5 +22,8 @@ Files:
 "Mini BDM Pod RevA BOM.txt"           - Bill of Materials
 "Mini BDM Pod RevA Schematic.pdf"     - Schematic
 "Mini BDM Pod RevA Mounting Plan.pdf" - Assembly diagram
+
+==> RevA cantains a severe layout bug. The MAX3373E level shifter incorrectly connected. Therefore the PCB may only be for 5V targets, ommiting and bypassing the level shifter. 
+
 
 This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License (http://creativecommons.org/licenses/by-nc-sa/3.0/).
