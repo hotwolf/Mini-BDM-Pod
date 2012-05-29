@@ -1,6 +1,6 @@
 ---
 layout: post
-title: First Board Assembled
+title: First Pod Assembled
 ---
 
 The first *Mini-BDM-Pod* (RevA) has been assembled. It is basically working, but it has a severe layout bug: The connections of the MAX3373 level shifter are mixed up:
