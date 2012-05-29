@@ -13,7 +13,7 @@ On my prototye, I soldered in the MAX3373 on pins 1, 2, and 3. I tried to fix th
 
 p=. !{{ site.url}}/images/Mini-BDM-Pod-RevA-front.png!
 
-Since I broke off the MAX7737s solder pads, I had to connect the target's BKGD and RESET pins with coper wire.
+Since I broke off the MAX7737s solder pads, I had to connect the target's BKGD and RESET pins with copper wire.
 
 p=. !{{ site.url}}/images/Mini-BDM-Pod-RevA-back.png!
 
