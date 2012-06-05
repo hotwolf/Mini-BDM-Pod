@@ -23,7 +23,7 @@ RevA (obsolete!!!):
 "Mini BDM Pod RevA Schematic.pdf"     - Schematic
 "Mini BDM Pod RevA Mounting Plan.pdf" - Assembly diagram
 
-==> RevA cantains a severe layout bug. The MAX3373E level shifter incorrectly connected. Therefore the PCB may only be for 5V targets, ommiting and bypassing the level shifter. 
+==> RevA cantains a severe layout bug. The MAX3373E level shifter incorrectly connected. Therefore the PCB may only be used for 5V targets, ommiting and bypassing the level shifter. 
 
 
 This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License (http://creativecommons.org/licenses/by-nc-sa/3.0/).
