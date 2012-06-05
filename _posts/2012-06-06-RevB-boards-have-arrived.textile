@@ -5,5 +5,5 @@ title: RevB Boards Have Arrived
 
 The RevB PCBs came in the mail.
 
-p=. !{{ site.url}}/images/Mini-BDM-Pod-RevA-PCB.png!
+p=. !{{ site.url}}/images/Mini-BDM-Pod-RevB-PCB.png!
 
