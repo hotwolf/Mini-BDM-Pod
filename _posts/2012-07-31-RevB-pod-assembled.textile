@@ -3,7 +3,7 @@ layout: post
 title: RevB Boards Assembled
 ---
 
-The first set of RevB pods has been assembled and tested. D-Bug12X runs just fine on it. No further problems have been found.
+The first set of RevB pods has been assembled and tested. D-Bug12X runs just fine on them. No further problems have been found.
 
 p=. !{{ site.url}}/images/Mini-BDM-Pod-RevB-assembled.png!
 
