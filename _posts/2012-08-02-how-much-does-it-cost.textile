@@ -3,7 +3,7 @@ layout: post
 title: How Much Does It Cost to Build a Mini-BDM-Pod?
 ---
 
-One of the goals of the Mini-BDM-Pod was to make it inexpensive to build. This is how the cost of materials summed up for me: 
+One of the goals of the Mini-BDM-Pod was to make it inexpensive to build. This is the sum of my material costs: 
 <center>
 
 table{border:1px solid}.
@@ -25,5 +25,5 @@ table{border:1px solid}.
 >.|<.                          |>. *53.16* USD|>. *17.30* USD |>. *12.82* USD |>.                                       |
 
 </center>
-In other words, it costed about 43 Euros (approx. 53 USD) to build the first Mini-BDM-Pod. The second one and all later ones only costed 6.75 Euros (approx. 8.30 USD). If you intend to build larger quantities of Mini-BDM-Pods, you'll also have to consider the regular price of the MCU (MC9S12XEQ512) and the level shifter (MAX3373). 
+In other words, it cost about 43 Euros (approx. 53 USD) to build the first Mini-BDM-Pod. The second one and all later ones only cost 6.75 Euros (approx. 8.30 USD). If you intend to build larger quantities of Mini-BDM-Pods, you'll also have to consider the regular price of the MCU (MC9S12XEQ512) and the level shifter (MAX3373). 
 
