@@ -1,0 +1,10 @@
+---
+layout: post
+title: D-Bug12XZv6 released
+---
+
+Version 6 of the "D-Bug12 Firmware (D-Bug12XZv6)":http://cache.freescale.com/files/soft_dev_tools/software/programmers/D-Bug12XZv6FW.zip is now available for download at the "Frescale web site":http://www.freescale.com/webapp/search/Serp.jsp?QueryText=d-bug12xz&SelectedAsset=Design+Tools .
+
+D-Bug12XZv6":http://cache.freescale.com/files/soft_dev_tools/software/programmers/D-Bug12XZv6FW.zip is the new recommended firmware for the Mini-BDM-Pod.
+
+In addition to the features of the previous version (D-Bug12Xv5:http://cache.freescale.com/files/soft_dev_tools/software/programmers/D-Bug12Xv5FW.zip), Verson 6 supports "Freescale's new MagniV devices":http://www.freescale.com/webapp/sps/site/taxonomy.jsp?code=S12MAGNIVMCU (incl. the new S12Z CPU).
