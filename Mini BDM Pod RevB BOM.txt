@@ -1,4 +1,4 @@
-Bill of Materials for the Mini BDM Pod Rev A:
+Bill of Materials for the Mini BDM Pod Rev B:
 =============================================
 
 ICs:
