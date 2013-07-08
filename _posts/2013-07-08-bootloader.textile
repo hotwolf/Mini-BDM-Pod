@@ -1,0 +1,14 @@
+---
+layout: post
+title: Bootloader
+---
+h3. This is where you'll find the bootloader for the D-Bug12XZ firmware:
+
+p=. !{{ site.url}}/images/BDMPgmr-Bootloader.png!
+
+The "D-Bug12XZ Firmware":http://cache.freescale.com/files/soft_dev_tools/software/programmers/D-Bug12XZv6FW.zip needs a bootloader(BDMPgmr bootloader) to run. This piece of firmware is included in "Frescale's":http://www.freescale.com  "LFBDMPGMRFW software package":http://freescale.com/files/soft_dev_tools/software/programmers/LFBDMPGMRFW.zip. This software is provided as a windows installer, which must be run. Afterwards the bootloader is located in a directory named "Firmware" within the installation directory (i.e C:\Program Files\Freescale\BDMProgrammer\Firmware\S12XEBoot.S19).
+
+The Bootloader is the only firmware code, which must be programmed into the Mini-BDM-Pod via the "BDM IN" interface. The initial loading and updationg of the "D-Bug12XZ Firmware":http://cache.freescale.com/files/soft_dev_tools/software/programmers/D-Bug12XZv6FW.zip itself can be done with the help of the bootloader via the USB interface. 
+
+To invoke the bootloader menu, the "bootloader"-jumper must be closed when the Mini-BDM-Pod is powered up.
+
