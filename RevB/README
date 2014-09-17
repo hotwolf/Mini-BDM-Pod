@@ -1,0 +1,13 @@
+Mini-BDM-Pod (RevB)
+=================== 
+These are the desgn files of the second revision (RevB) of the Mini-BDM-Pod. 
+
+"Mini BDM Pod RevB.sch"               - Schematic (Eagle 6.1.0)
+"Mini BDM Pod RevB.brd"               - PCB layout (Eagle 6.1.0)
+"Mini BDM Pod RevB.Gerber.zip"        - PCB layout (Gerber)
+"Mini BDM Pod RevB.svg"               - Enclosure (for laser cutting service) 
+"Mini BDM Pod RevB BOM.txt"           - Bill of Materials
+"Mini BDM Pod RevB Schematic.pdf"     - Schematic
+"Mini BDM Pod RevB Mounting Plan.pdf" - Assembly diagram
+
+This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License (http://creativecommons.org/licenses/by-nc-sa/3.0/).
