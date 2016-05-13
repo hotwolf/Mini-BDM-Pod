@@ -1,0 +1,13 @@
+---
+layout: post
+title: First Pod Assembled
+---
+
+<p>The first <strong>Mini-<span class="caps">BDM</span>-Pod</strong> (RevA) has been assembled. It is basically working, but it has a severe layout bug: The connections of the MAX3373 level shifter are mixed up:</p>
+<p style="text-align:center;"><img src="images/Mini-BDM-Pod-RevA-MAX3373.png" alt="" /></p>
+<p>The RevA <span class="caps">PCB</span> is still usable if the level shifter is bypassed, but then it will only suppoert 5V targets.</p>
+<p>On my prototye, I soldered in the MAX3373 on pins 1, 2, and 3. I tried to fix the remaining connections with copper wire, but I had to give up when the solder pads came off the <span class="caps">PCB</span>. I ended up using the free space for an additional jumper to power the target with the USB&#8217;s supply voltage:</p>
+<p style="text-align:center;"><img src="images/Mini-BDM-Pod-RevA-front.png" alt="" /></p>
+<p>Since I broke off the MAX7737s solder pads, I had to connect the target&#8217;s <span class="caps">BKGD</span> and <span class="caps">RESET</span> pins with copper wire.</p>
+<p style="text-align:center;"><img src="http:images/Mini-BDM-Pod-RevA-back.png" alt="" /></p>
+<p>The new boards (RevB) have already been ordered. I hope I&#8217;ll have better luck with those.</p>

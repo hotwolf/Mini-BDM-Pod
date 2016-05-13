@@ -1,6 +1,0 @@
----
-layout: post
-title: Project Listed on Upverter.com
----
-
-The *Mini-BDM-Pod* project is now listed on "upverter.com":http://upverter.com/hotwolf/bf194eb612279394/Mini-BDM-Pod/ .
