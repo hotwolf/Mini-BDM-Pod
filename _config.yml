@@ -3,7 +3,7 @@ auto:        true
 server:      true
 server_port: 80
 baseurl:     /
-url:         http://hotwolf.github.com/Mini-BDM-Pod
+url:         //hotwolf.github.io/Mini-BDM-Pod
 
 source:      .
 destination: ./_site
